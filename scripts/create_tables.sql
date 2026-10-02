@@ -1,6 +1,6 @@
--- Create the tables as they are in the source system CRM.
+-- Create the tables as they are in the source systems.
 
--- Create the tables as they are in the source system CRM.
+--------------------------CRM---------------------------
 
 IF OBJECT_ID('bronze.crm_cust_info', 'U') IS NOT NULL
 	DROP TABLE bronze.crm_cust_info;
@@ -49,7 +49,7 @@ CREATE TABLE bronze.crm_sales_details
 	sls_price INT
 );
 
--- Create tables as they are in source system ERP.
+--------------------------------ERP--------------------------------
 
 IF OBJECT_ID('bronze.erp_cust_az12', 'U') IS NOT NULL
 	DROP TABLE bronze.erp_cust_az12;
